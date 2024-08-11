@@ -6,7 +6,7 @@ const Card = () => {
       className={`${style.card}`}
     >
       <h2 className="">WhatCV</h2>
-      <div className=" "></div>
+      <div className={style.line}></div>
       <span className="">
         Subject to status. UK residents only. PayPal is a responsible lender.
         Pay in 3 performance may influence your credit score. T&Cs apply.

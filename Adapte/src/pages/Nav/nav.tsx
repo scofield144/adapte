@@ -4,7 +4,7 @@ import instagram from "../../assets/instagram.svg";
 
 const Nav = () => {
   return (
-    <div className=" flex justify-around  items-center bg-Teal">
+    <div className=" flex justify-around  items-center ">
       <div>
         <img className=" w-20 h-20" src={logo} alt="logo" />
       </div>
@@ -25,7 +25,7 @@ const Nav = () => {
           <a href="http://"> CONTACTOS</a>
         </li>
       </ul>
-      <div className=" bg-tahiti h-20 flex gap-5 items-center">
+      <div className="  h-20 flex gap-5 items-center">
         <a href="http://" className=" w-10">
           <img src={facebook} alt="facebook" />
         </a>

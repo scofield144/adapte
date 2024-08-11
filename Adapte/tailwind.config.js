@@ -12,7 +12,7 @@ export default {
       metal: "#565584",
       tahiti: "#3ab7bf",
       silver: "#ecebff",
-      black: "#0000",
+      Black: "#000",
       // Reds and Pinks
       Red: "#FF0000",
       Crimson: "#DC143C",

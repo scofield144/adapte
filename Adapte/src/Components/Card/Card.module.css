@@ -1,0 +1,38 @@
+
+.card {
+    background-color:#D9D9D9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    width:310px;
+    heigh:620px;
+    padding: 20px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+  }
+  
+  .card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  
+  .card span {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 20px;
+    /* text-align:start; */
+    /* color: #666; */
+  }
+  
+
+  .line {
+    heigh: 5rem;
+    background-color: white;
+  }

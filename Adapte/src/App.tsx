@@ -1,11 +1,16 @@
 import "./App.css";
+import About from "./pages/About/About";
+import Hero from "./pages/Hero/Hero";
+import Nav from "./pages/Nav/nav";
+import Project from "./pages/Projects/Project";
 
 function App() {
   return (
     <>
-      <div>
-        <h1 className="text-3xl font-bold text-black">Hello Adapte</h1>
-      </div>
+      <Nav />
+      <Hero />
+      <About />
+      <Project/>
     </>
   );
 }

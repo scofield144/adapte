@@ -1,0 +1,22 @@
+.backImage {
+  background-image: url("../../assets/background.jpg");
+  background-position: center center, top left;
+  background-repeat: no-repeat, repeat;
+  background-attachment: fixed, scroll;
+  /* background-size: 1290px; */
+  background-size: cover, auto;
+  height: 40rem;
+  /* width:622px; */
+
+
+  /* padding: 30px; */
+
+/* 
+  display: flex;
+  flex-direction: column; */
+
+}
+
+.text {
+
+}

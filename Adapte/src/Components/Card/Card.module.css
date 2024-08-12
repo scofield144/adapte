@@ -4,15 +4,16 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-    width:310px;
+    width:304px;
     heigh:620px;
     padding: 20px;
 
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    
+
     gap: 4px;
 
   }

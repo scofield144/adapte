@@ -1,15 +1,28 @@
 import style from "./Card.module.css";
 
-const Card = () => {
+
+
+
+interface Project {
+  id:number,
+  title: string;
+  content:string;
+  link:string;
+}
+
+
+
+const Card = ({project}:Project) => {
   return (
     <div
-      className={`${style.card}`}
+      className={`${style.card} justify-evenly`}
     >
-      <h2 className="">WhatCV</h2>
+      <h2 className="">{project.title}</h2>
       <div className={style.line}></div>
       <span className="">
-        Subject to status. UK residents only. PayPal is a responsible lender.
-        Pay in 3 performance may influence your credit score. T&Cs apply.
+        {project.content}
+        {/* Subject to status. UK residents only. PayPal is a responsible lender.
+        Pay in 3 performance may influence your credit score. T&Cs apply. */}
       </span>
       <button
         type="button"

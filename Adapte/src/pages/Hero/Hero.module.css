@@ -6,17 +6,10 @@
   /* background-size: 1290px; */
   background-size: cover, auto;
   height: 40rem;
-  /* width:622px; */
-
-
-  /* padding: 30px; */
-
-/* 
-  display: flex;
-  flex-direction: column; */
-
 }
-
+h1 {
+  font-weight: 900;
+  font-style: normal;
+}
 .text {
-
 }

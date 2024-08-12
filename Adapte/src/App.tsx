@@ -14,11 +14,11 @@ function App() {
       <Nav />
       <Hero />
       <About />
-      <Project/>
-      <Mission/>
-      <Partner/>
-      <Contact/>
-      <Footer/>
+      <Project />
+      <Mission />
+      <Partner />
+      <Contact />
+      <Footer />
     </div>
   );
 }

@@ -1,19 +1,20 @@
-import logo from "../../assets/logo.jpg"
+import logo from "../../assets/logo.png";
+import style from "./About.module.css";
 
 const About = () => {
   return (
     <div
-      className=" h-2/6 flex flex-row gap-6 justify-center align-middle items-start
-      pt-2 
+      className=" flex flex-row gap-3 
+      justify-center  items-start h-96
       "
     >
-      <div className=" w-28">
+      <div className={style.img}>
         <img className="" src={logo} alt="logo" />
       </div>
 
-      <div className="  flex flex-col gap-4 text-left w-6/12">
+      <div className=" pt-20 flex flex-col gap-4 text-left w-6/12">
         {" "}
-        <h2 className=" text-2xl">QUEM SOMOS...</h2>
+        <h2 className=" text-3xl">QUEM SOMOS</h2>
         <p>
           Associação de Desenvolvimento e Apoio Profissional em Tecnologias e
           Educação (ADAPTE) é uma organização sem fis lucrativos, que visa

@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className=" text-white">
       <div className={`${styled.backImage} flex flex-col justify-center items-center gap-2`}>
-        <h1 className="  text-6xl">Bem-vindos a ADAPTE</h1>
+        <h1 className="  text-6xl">Bem-Vindos a ADAPTE</h1>
         <h2 className=" text-3xl">
           Conheça os projeto dedicados à inovação e educação
         </h2>

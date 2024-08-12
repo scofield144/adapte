@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 :root {
+  max-width: 1921px;
   background-color: #f0f2f2;
   font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-size: 18px;
 }

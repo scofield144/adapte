@@ -30,16 +30,20 @@ const projects = [
     link: "#",
   },
 ];
-
+//h-[558.46px]
 const Project = () => {
   return (
-    <div
+    <div id="project"
       className="flex 
-    flex-col gap-3 items-start    
+    flex-col justify-around h-full
+    items-center gap-6  pt-10
     "
     >
-      <h2 className=" text-3xl">NOSSOS PROJETOS</h2>
-      <div className=" flex flex-row gap-3">
+      {/* flex flex-row gap-3  justify-center 
+      tablet:flex-col tablet:items-center */}
+      <h2 className=" text-3xl text-start">NOSSOS PROJETOS</h2>
+      <div className="  grid grid-cols-1   tablet:grid-cols-2 
+      laptop:grid-cols-3 desktop:grid-cols-4 gap-4 ">
         {projects.map((project) => (
           <Card key={project.id} project={project} />
         ))}

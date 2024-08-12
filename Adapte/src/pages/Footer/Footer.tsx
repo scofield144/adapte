@@ -2,33 +2,39 @@ import style from "./Footer.module";
 
 const Footer = () => {
   return (
-    <div className=" flex flex-col gap-4">
+    <footer className=" flex flex-col h-full justify-center pt-10 
+    " id="footer">
     <div className=" border-t border-black"></div>
-    <div className=" h-10"><ul className=" flex justify-center gap-4">
-        <li>
-          <a href="http://"> QUEM SOMOS</a>
+    <div className=" h-full w-full  
+    ">
+      <ul className="flex justify-center  md-min:h-[4rem] 
+      md:flex md:flex-row md-min:gap-6 
+      md-min:items-center  md-min:align-middle
+    md:justify-center  ">
+        {/* <li>
+          <a href="#about"> QUEM SOMOS</a>
         </li>
         <li>
-          <a href="http://"> PROJETOS</a>
+          <a href="#project"> PROJETOS</a>
         </li>
         <li>
-          <a href="http://"> NOSSA MISSÃO</a>
+          <a href="#mission"> NOSSA MISSÃO</a>
         </li>
         <li>
-          <a href="http://"> PARCEIROS</a>
+          <section id="#partners" > PARCEIROS</section>
+        </li> */}
+        <li>
+          <a href="#police"> POLITICA DE PRIVACIDADE</a>
         </li>
         <li>
-          <a href="http://"> POLITICA DE PRIVACIDADE</a>
+          <a href="#term"> TERMOS DE UTILIZACAO</a>
         </li>
         <li>
-          <a href="http://"> TERMOS DE UTILIZACAO</a>
-        </li>
-        <li>
-          <a href="http://"> CONTACTOS</a>
+          <a href="#contact"> CONTACTOS</a>
         </li>
       </ul></div>
       
-    </div>
+    </footer>
   );
 };
 export default Footer;

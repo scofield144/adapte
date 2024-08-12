@@ -2,6 +2,26 @@
 export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}", "./public/**/*.html"],
   theme: {
+    screens: {
+    'tablet': { 'min': '640px', 'max': '890px' },
+      'laptop': { 'min': '891px' },
+      'desktop': { 'min': '1285px' },
+      'sm': {'min': '640px', 'max': '767px'},
+      // => @media (min-width: 640px and max-width: 767px) { ... }
+
+      'md': {'min': '768px', 'max': '1023px'},
+      'md-min': {'min': '767px'},
+      // => @media (min-width: 768px and max-width: 1023px) { ... }
+
+      'lg': {'min': '1024px', 'max': '1279px'},
+      // => @media (min-width: 1024px and max-width: 1279px) { ... }
+
+      'xl': {'min': '1280px', 'max': '1535px'},
+      // => @media (min-width: 1280px and max-width: 1535px) { ... }
+
+      '2xl': {'min': '1536px'},
+      // => @media (min-width: 1536px) { ... }
+    },
     extend: {},
     colors: {
       transparent: "transparent",
@@ -57,6 +77,8 @@ export default {
       // Neutrals
       Beige: "#F5F5DC",
       Ivory: "#FFFFF0",
+
+      magenta: "#f0f2f2",
     },
     plugins: [],
   },

@@ -31,3 +31,25 @@ ul{
     
     
   }
+
+
+
+  .menuMob {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menuMobItem {
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    /* text-align: center; */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menuMobItem:hover {
+    /* color: white; */
+    transform: scale(1.05);
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); */
+  }

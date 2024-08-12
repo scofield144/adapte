@@ -22,7 +22,11 @@ export default {
       '2xl': {'min': '1536px'},
       // => @media (min-width: 1536px) { ... }
     },
-    extend: {},
+    extend: {
+      backgroundOpacity: {
+        '98': '0.98',
+      },
+    },
     colors: {
       transparent: "transparent",
       current: "currentColor",

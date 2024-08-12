@@ -23,7 +23,7 @@ const Nav = () => {
       <Logo />
       <nav className="hidden laptop:flex space-x-6">
         <ul className="flex justify-center gap-4">
-          <li>
+          <li >
             <a href="#about" className={`${style.menuItem}`}>
               QUEM SOMOS
             </a>
@@ -67,8 +67,8 @@ const Nav = () => {
 
 const MobileMenu = ({ closeMenu }) => (
   <div
-    className="fixed inset-0 bg-magenta bg-opacity-90 text-white flex flex-col items-start justify-start
-    z-50 p-2"
+    className="fixed inset-0 bg-magenta bg-opacity-98  flex flex-col items-start justify-start
+    z-50 p-4"
   >
     <div className="flex flex-row justify-between items-center w-full p-2">
       <div>
@@ -81,40 +81,44 @@ const MobileMenu = ({ closeMenu }) => (
       </div>
     </div>
 
-    <nav className="space-y-8 text-lg">
-      <ul className=" text-left">
-        <li>
-          <a href="#about" className="hover:text-Blue" onClick={closeMenu}>
+    <nav className="space-y-8 text-lg ">
+      <ul className={`${style.menuMob} text-left`}>  
+        <li className={`${style.menuMobItem}`}>
+          <a href="#about"  onClick={closeMenu}>
             QUEM SOMOS
           </a>
         </li>
-        <li>
-          <a href="#project" className="hover:text-Blue" onClick={closeMenu}>
+        <li className={`${style.menuMobItem}`}>
+          <a
+            href="#project"
+            
+            onClick={closeMenu}
+          >
             PROJETOS
           </a>
         </li>
-        <li>
+        <li className={`${style.menuMobItem}`}>
           <a
             href="#mission"
-            className="hover:text-blue-500"
+            
             onClick={closeMenu}
           >
             NOSSA MISSÃO
           </a>
         </li>
-        <li>
+        <li className={`${style.menuMobItem}`}>
           <a
             href="#partner"
-            className="hover:text-blue-500"
+            
             onClick={closeMenu}
           >
             PARCEIROS
           </a>
         </li>
-        <li>
+        <li className={`${style.menuMobItem}`}>
           <a
             href="#contact"
-            className="hover:text-blue-500"
+            
             onClick={closeMenu}
           >
             CONTACTOS
@@ -126,9 +130,9 @@ const MobileMenu = ({ closeMenu }) => (
 );
 
 const Logo = () => (
-  <Link to="/" aria-label="Homepage">
+  <a href="#hero" aria-label="Homepage">
     <img className="w-12 h-12" src={logo} alt="Company logo" />
-  </Link>
+  </a>
 );
 
 const SocialIcons = () => (

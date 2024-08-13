@@ -4,9 +4,9 @@ import microsoft from "../../assets/microsoft-svgrepo-com.svg";
 const Partner = () => {
   return (
     <div className=" 
-    flex flex-col h-full justify-center
-     tablet:flex-col gap-3  pt-10 " id="partner">
-      <h1 className=" text-3xl md-min:text-left">PARCEIROS</h1>
+    flex flex-col h-[307px] bg-white justify-center  mt-[47px] md-min:rounded-lg
+     tablet:flex-col gap-7 pl-4 pr-4" id="partner">
+      <h1 className=" text-3xl font-bold text-left">PARCEIROS</h1>
       <div className=" flex flex-row justify-center ">
         <img className=" w-3/12 md-min:w-2/12 " src={Google} alt="google" />
         <img className=" w-3/12 md-min:w-2/12" src={microsoft} alt="google" />

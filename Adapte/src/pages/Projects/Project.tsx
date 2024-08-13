@@ -35,13 +35,12 @@ const Project = () => {
   return (
     <div id="project"
       className="flex 
-    flex-col justify-around h-full
-    items-center gap-6  pt-10
+    flex-col justify-around h-full pb-10
+    items-center gap-6  pt-10 md-min:mt-10 min:mt-10 md-min:rounded-lg
+    md-min:bg-white
     "
     >
-      {/* flex flex-row gap-3  justify-center 
-      tablet:flex-col tablet:items-center */}
-      <h2 className=" text-3xl text-start">NOSSOS PROJETOS</h2>
+      <h2 className=" text-3xl text-left font-bold">NOSSOS PROJETOS</h2>
       <div className="  grid grid-cols-1   tablet:grid-cols-2 
       laptop:grid-cols-3 desktop:grid-cols-4 gap-4 ">
         {projects.map((project) => (

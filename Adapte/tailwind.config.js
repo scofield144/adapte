@@ -11,6 +11,7 @@ export default {
 
       'md': {'min': '768px', 'max': '1023px'},
       'md-min': {'min': '767px'},
+      'md-max': {'max': '756px'},
       // => @media (min-width: 768px and max-width: 1023px) { ... }
 
       'lg': {'min': '1024px', 'max': '1279px'},
@@ -67,7 +68,7 @@ export default {
       Turquoise: "#40E0D0",
       SkyBlue: "#87CEEB",
       Indigo: "#4B0082",
-
+      BlueOcean: "#94BBE9",
       // Purples
       Violet: "#EE82EE",
       Lavender: "#E6E6FA",

@@ -1,9 +1,8 @@
-import logo from "../../assets/logo.png";
-import facebook from "../../assets/facebook.svg";
-import instagram from "../../assets/instagram.svg";
+ 
 import style from "./nav.module.css";
-
-import { Link } from "react-router-dom";
+import { SocialIcons } from "../../Components/Logos/socialmedia";
+import { Logo } from "../../Components/Logos/adapte";
+ 
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -19,8 +18,9 @@ const Nav = () => {
   };
 
   return (
-    <header className="flex justify-between items-center p-4 shadow-md">
+    <header className="flex justify-between bg-magenta  items-center p-4 shadow-md">
       <Logo />
+     
       <nav className="hidden laptop:flex space-x-6">
         <ul className="flex justify-center gap-4">
           <li >
@@ -50,7 +50,7 @@ const Nav = () => {
           </li>
         </ul>
       </nav>
-      <div className="md:hidden">
+      <div className="md-min:hidden">
         <button
           onClick={toggleMenu}
           className="text-xl focus:outline-none"
@@ -60,7 +60,10 @@ const Nav = () => {
         </button>
       </div>
       {isOpen && <MobileMenu closeMenu={closeMenu} />}
-      <SocialIcons />
+      <div className="md-max:hidden">
+      <SocialIcons/>
+      </div>
+      
     </header>
   );
 };
@@ -129,21 +132,5 @@ const MobileMenu = ({ closeMenu }) => (
   </div>
 );
 
-const Logo = () => (
-  <a href="#hero" aria-label="Homepage">
-    <img className="w-12 h-12" src={logo} alt="Company logo" />
-  </a>
-);
-
-const SocialIcons = () => (
-  <div className="hidden md:flex space-x-4">
-    <a href="http://facebook.com" aria-label="Facebook" className="w-8 h-8">
-      <img src={facebook} alt="Facebook" />
-    </a>
-    <a href="http://instagram.com" aria-label="Instagram" className="w-8 h-8">
-      <img src={instagram} alt="Instagram" />
-    </a>
-  </div>
-);
 
 export default Nav;

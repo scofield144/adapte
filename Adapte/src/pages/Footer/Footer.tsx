@@ -2,27 +2,16 @@ import style from "./Footer.module";
 
 const Footer = () => {
   return (
-    <footer className=" flex flex-col h-full justify-center pt-10 
+    <footer className=" flex flex-col h-[112px] justify-center pt-7  bg-Black text-white mt-[47px]
     " id="footer">
-    <div className=" border-t border-black"></div>
-    <div className=" h-full w-full  
-    ">
-      <ul className="flex justify-center  md-min:h-[4rem] 
+    
+      <ul className="flex justify-center w-full pr-4 pl-4  md-min:h-[4rem] 
       md:flex md:flex-row md-min:gap-6 
       md-min:items-center  md-min:align-middle
-    md:justify-center  ">
-        {/* <li>
-          <a href="#about"> QUEM SOMOS</a>
-        </li>
-        <li>
-          <a href="#project"> PROJETOS</a>
-        </li>
-        <li>
-          <a href="#mission"> NOSSA MISSÃO</a>
-        </li>
-        <li>
-          <section id="#partners" > PARCEIROS</section>
-        </li> */}
+    md:justify-center 
+    
+    ">
+      
         <li>
           <a href="#police"> POLITICA DE PRIVACIDADE</a>
         </li>
@@ -32,8 +21,7 @@ const Footer = () => {
         <li>
           <a href="#contact"> CONTACTOS</a>
         </li>
-      </ul></div>
-      
+      </ul>      
     </footer>
   );
 };

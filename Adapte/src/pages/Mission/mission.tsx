@@ -19,20 +19,20 @@ const Mission = () => {
   //     <h2 className="text-3xl">Missão</h2>
   //     <p className=" ">
   return (
-    <div className=" flex flex-col gap-10 h-full 
-    md-min:flex md-min:flex-row md-min:gap-4  pt-10
+    <div className=" flex flex-col gap-10 h-full bg-white md-min:rounded-lg
+    md-min:flex md-min:flex-row md-min:gap-4 mt-[47px] pt-10 pb-10  w-full
 
     " id="mission">
-      <div className=" flex flex-col gap-6  ">
-        <div className="space-y-10 md-min:text-left">
-          <h2 className="text-3xl">Missão</h2>
+      <div className=" flex flex-col gap-10   ">
+        <div className=" pr-4 pl-4 space-y-2 text-left">
+          <h2 className="text-3xl font-bold">Missão</h2>
           <p className=" ">
             Promover o desenvolvimento tecnológico e educacional acessível para
             todos.
           </p>
-        </div>
-        <div className="w-[340px] md:w-full ">
-          <h2 className=" text-3xl font-bold">Areas de atuacao</h2>
+        </div> 
+        <div className="  w-[19.1rem] md-min:w-[24rem]   ml-[2rem]">
+          <h2 className=" text-3xl font-bold pb-5">Areas de Atuacao</h2>
           <Slider {...settings} className="">
             <div>
               <Area num={1} />
@@ -50,7 +50,7 @@ const Mission = () => {
         </div>
       </div>
       <div>
-        <img src={urlmission} className="w-full h-full"/>
+        <img src={urlmission} className="w-full h-full md-min:p-4 "/>
       </div>
     </div>
   );

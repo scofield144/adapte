@@ -3,7 +3,7 @@ import style from "./nav.module.css";
 import { SocialIcons } from "../../Components/Logos/socialmedia";
 import { Logo } from "../../Components/Logos/adapte";
  
-import { useState } from "react";
+import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Nav = () => {
@@ -68,7 +68,11 @@ const Nav = () => {
   );
 };
 
-const MobileMenu = ({ closeMenu }) => (
+interface CloseMenu {
+  closeMenu:()=> void;
+}
+
+const MobileMenu:React.FC<CloseMenu> = ({ closeMenu }) => (
   <div
     className="fixed inset-0 bg-magenta bg-opacity-98  flex flex-col items-start justify-start
     z-50 p-4"

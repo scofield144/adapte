@@ -1,4 +1,4 @@
-import style from "./Contact.module.css";
+// import style from "./Contact.module.css";
 import facebook from "../../assets/facebook.svg";
 import instagram from "../../assets/instagram.svg";
 

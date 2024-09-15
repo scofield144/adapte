@@ -7,7 +7,7 @@ import style from "./About.module.css";
 const About = () => {
   return (
     <div id="about"
-      className=" bg-white w-full m-auto bg-purple       
+      className=" bg-white w-full m-auto     
       flex flex-col items-center md-min:flex md-min:flex-row gap-3 
       md-min:rounded-lg
       justify-center  md-min:items-start h-full pt-10 mt-[47px]  "
@@ -25,7 +25,7 @@ const About = () => {
           promover o fomento do empreendedorismo por meio da educação e a
           inclusão tecnológica junto à sociedade angolana.
         </p>
-       <Button/>
+       <Button address="https://www.facebook.com/profile.php?id=61564223186228"/>
       </div>
     </div>
   );

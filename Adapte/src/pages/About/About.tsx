@@ -5,6 +5,7 @@ import style from "./About.module.css";
 // flex flex-row gap-3 //  rounded-[30px] shadow max-w-fit 
 // justify-center  items-start  h-full
 const About = () => {
+  const link:string = "https://www.facebook.com/profile.php?id=61564223186228"
   return (
     <div id="about"
       className=" bg-white w-full m-auto     
@@ -25,7 +26,7 @@ const About = () => {
           promover o fomento do empreendedorismo por meio da educação e a
           inclusão tecnológica junto à sociedade angolana.
         </p>
-       <Button address="https://www.facebook.com/profile.php?id=61564223186228"/>
+       <Button address={link}/>
       </div>
     </div>
   );

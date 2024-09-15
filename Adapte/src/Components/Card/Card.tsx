@@ -4,26 +4,22 @@ import style from "./Card.module.css";
 
 
 
-interface Project {
-  id:number,
+interface ComponentProject {
+  id?:number,
   title: string;
   content:string;
-  link:string;
+  link?:string;
 }
 
-interface Project { 
-  project: Project|null
-}
-
-const Card:React.FC<Project> = ({project}) => {
+const Card:React.FC<ComponentProject> = ({title,content}) => {
   return (
     <div
       className={`${style.card}`}
     >
-      <h2 className="">{project?.title}</h2>
+      <h2 className="">{title}</h2>
       <div className={style.line}></div>
       <span className="">
-        {project?.content}
+        {content}
        </span>
        <button
 type="button"

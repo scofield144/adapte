@@ -31,7 +31,7 @@ const projects = [
   },
 ];
 //h-[558.46px]
-const Project = () => {
+const Project: React.FC = () => {
   return (
     <div id="project"
       className="flex 
@@ -44,7 +44,7 @@ const Project = () => {
       <div className="  grid grid-cols-1   tablet:grid-cols-2 
       laptop:grid-cols-3 desktop:grid-cols-4 gap-4 ">
         {projects.map((project) => (
-          <Card key={project.id} project={project} />
+          <Card key={project.id} title={project.title} content={project.content} />
         ))}
       </div>
     </div>

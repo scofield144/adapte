@@ -1,11 +1,9 @@
 import logo from "../../assets/logwhite.jpg";
 import Button from "../../Components/Button/button";
 import style from "./About.module.css";
-//h-[428.46px]
-// flex flex-row gap-3 //  rounded-[30px] shadow max-w-fit 
-// justify-center  items-start  h-full
+
 const About = () => {
-  const link:string = "https://www.facebook.com/profile.php?id=61564223186228"
+  const link= "https://www.facebook.com/profile.php?id=61564223186228"
   return (
     <div id="about"
       className=" bg-white w-full m-auto     
@@ -31,5 +29,5 @@ const About = () => {
     </div>
   );
 };
-//pt-20 flex flex-col gap-6 text-left w-6/12
+
 export default About;

@@ -32,7 +32,7 @@ const Mission = () => {
           </p>
         </div> 
         <div className="  w-[19.1rem] md-min:w-[24rem]   ml-[2rem]">
-          <h2 className=" text-3xl font-bold pb-5">Areas de Atuacao</h2>
+          <h2 className=" text-3xl font-bold pb-5"> Áreas de Atuação</h2>
           <Slider {...settings} className="">
             <div>
               <Area num={1} />

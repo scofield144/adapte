@@ -1,4 +1,5 @@
 // import Button from "../Button/button";
+import Button from "../Button/button";
 import style from "./Card.module.css";
 
 
@@ -8,10 +9,10 @@ interface ComponentProject {
   id?:number,
   title: string;
   content:string;
-  link?:string;
+  link:string;
 }
 
-const Card:React.FC<ComponentProject> = ({title,content}) => {
+const Card:React.FC<ComponentProject> = ({title,content,link}) => {
   return (
     <div
       className={`${style.card}`}
@@ -21,12 +22,8 @@ const Card:React.FC<ComponentProject> = ({title,content}) => {
       <span className="">
         {content}
        </span>
-       <button
-type="button"
-className=" w-full bg-Black hover:bg-Black text-white py-2 px-4 rounded-lg shadow max-w-fit "
->
-Saber Mais
-</button>
+       <Button address={link} />
+       
     </div>
   );
 };

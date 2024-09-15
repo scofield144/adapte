@@ -19,18 +19,21 @@ const Mission = () => {
   //     <h2 className="text-3xl">Missão</h2>
   //     <p className=" ">
   return (
-    <div className=" flex flex-col gap-10 h-full bg-white md-min:rounded-lg
+    <div
+      className=" flex flex-col gap-10 h-full bg-white md-min:rounded-lg
     md-min:flex md-min:flex-row md-min:gap-4 mt-[47px] pt-10 pb-10  w-full
 
-    " id="mission">
+    "
+      id="mission"
+    >
       <div className=" flex flex-col gap-10   ">
         <div className=" pr-4 pl-4 space-y-2 text-left">
           <h2 className="text-3xl font-bold">Missão</h2>
           <p className=" ">
-            Promover o desenvolvimento tecnológico e educacional acessível para
+            Promover o Desenvolvimento Tecnológico e Educacional acessível para
             todos.
           </p>
-        </div> 
+        </div>
         <div className="  w-[19.1rem] md-min:w-[24rem]   ml-[2rem]">
           <h2 className=" text-3xl font-bold pb-5"> Áreas de Atuação</h2>
           <Slider {...settings} className="">
@@ -50,7 +53,7 @@ const Mission = () => {
         </div>
       </div>
       <div>
-        <img src={urlmission} className="w-full h-full md-min:p-4 "/>
+        <img src={urlmission} className="w-full h-full md-min:p-4 " />
       </div>
     </div>
   );

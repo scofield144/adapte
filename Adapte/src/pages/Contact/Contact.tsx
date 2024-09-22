@@ -1,6 +1,4 @@
 
-import facebook from "../../assets/facebook.svg";
-import instagram from "../../assets/instagram.svg";
 import people from "../../assets/people-working-together-animation-studio.jpg"
 import RegistrationSection from "../../Components/Registration/Registration";
 
@@ -24,16 +22,6 @@ const Contact = () => {
         <div className="md-max:hidden">
 
         <img src={people} className="" />
-
-          {/* <h3 className="text-2xl text-left">Visite as nossas redes sociais</h3>
-          <div className="   flex  gap-2 justify-left">
-            <a href="http://" className=" w-1/12">
-              <img src={facebook} alt="facebook" />
-            </a>
-            <a href="http://" className=" w-1/12">
-              <img src={instagram} alt="facebook" />
-            </a>
-          </div> */}
         </div>
       </div>
     </section>

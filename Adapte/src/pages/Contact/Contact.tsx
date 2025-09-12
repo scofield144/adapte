@@ -1,7 +1,6 @@
-
+// ...existing code...
 import people from "../../assets/people-working-together-animation-studio.jpg"
 import RegistrationSection from "../../Components/Registration/Registration";
-
 const Contact = () => {
   return (
     <section
@@ -28,3 +27,4 @@ const Contact = () => {
   );
 };
 export default Contact;
+// ...existing code...
